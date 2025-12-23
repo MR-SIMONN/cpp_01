@@ -12,18 +12,11 @@
 
 #include "Zombie.hpp"
 
-Zombie::Zombie() : name("") {}
-
 Zombie::Zombie(std::string nameValue) : name(nameValue) {}
 
 Zombie::~Zombie()
 {
     std::cout << name << " is destroyed" << std::endl;
-}
-
-void Zombie::setName(std::string nameValue)
-{
-    name = nameValue;
 }
 
 void Zombie::announce() const
