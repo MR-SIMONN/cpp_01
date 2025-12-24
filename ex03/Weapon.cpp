@@ -12,8 +12,6 @@
 
 #include "Weapon.hpp"
 
-Weapon::Weapon() : type("") {}
-
 Weapon::Weapon(std::string value) : type(value) {}
 
 Weapon::~Weapon() {}
