@@ -12,15 +12,15 @@
 
 #include "Zombie.hpp"
 
-Zombie* zombieHorde(int count, std::string value)
+Zombie* zombieHorde(int N, std::string name)
 {
-    if (count <= 0)
+    if (N <= 0)
         return 0;
 
-    Zombie* group = new Zombie[count];
+    Zombie* group = new Zombie[N];
 
-    for (int i = 0; i < count; i++)
-        group[i].setName(value);
+    for (int i = 0; i < N; i++)
+        group[i].setName(name);
 
     return group;
 }

@@ -23,13 +23,12 @@ class Zombie
 
     public:
         Zombie();
-        Zombie(std::string value);
         ~Zombie();
 
         void setName(std::string value);
         void announce() const;
 };
 
-Zombie* zombieHorde(int count, std::string value);
+Zombie* zombieHorde( int N, std::string name );
 
 #endif
