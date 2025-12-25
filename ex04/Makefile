@@ -1,6 +1,6 @@
-SRCS = main.cpp FileReplacer.cpp FileReplacer.hpp
+SRCS = main.cpp FileReplacer.cpp
 
-NAME = something
+NAME = replace_file
 
 CXX = c++
 
