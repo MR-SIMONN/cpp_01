@@ -36,7 +36,7 @@ std::string FileReplacer::read() const
 
 std::string FileReplacer::apply(std::string out) const
 {
-    std::string::size_type pos = 0;
+    size_t pos = 0;
 
     while ((pos = out.find(s1, pos)) != std::string::npos)
     {
