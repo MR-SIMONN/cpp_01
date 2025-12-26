@@ -34,9 +34,8 @@ std::string FileReplacer::read() const
     return data;
 }
 
-std::string FileReplacer::apply(const std::string& text) const
+std::string FileReplacer::apply(std::string out) const
 {
-    std::string out = text;
     std::string::size_type pos = 0;
 
     while ((pos = out.find(s1, pos)) != std::string::npos)
@@ -48,7 +47,7 @@ std::string FileReplacer::apply(const std::string& text) const
     return out;
 }
 
-bool FileReplacer::write(const std::string& text) const
+bool FileReplacer::write(std::string text) const
 {
     std::ofstream out((file + ".replace").c_str());
     if (!out.is_open())

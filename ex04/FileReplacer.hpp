@@ -28,8 +28,8 @@ public:
     FileReplacer(std::string file, std::string s1, std::string s2);
 
     std::string read() const;
-    std::string apply(const std::string& text) const;
-    bool write(const std::string& text) const;
+    std::string apply(std::string out) const;
+    bool write(std::string text) const;
 };
 
 #endif
