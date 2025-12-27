@@ -6,7 +6,7 @@
 /*   By: moel-hai <moel-hai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 03:59:36 by moel-hai          #+#    #+#             */
-/*   Updated: 2025/11/17 05:42:47 by moel-hai         ###   ########.fr       */
+/*   Updated: 2025/12/27 23:01:19 by moel-hai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ class Zombie
         std::string name;
 
     public:
-        Zombie(std::string nameValue);
+        Zombie(std::string name);
         ~Zombie();
 
         void announce();
 };
 
-Zombie* newZombie(std::string nameValue);
-void randomChump(std::string nameValue);
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif
