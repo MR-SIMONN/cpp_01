@@ -6,13 +6,13 @@
 /*   By: moel-hai <moel-hai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 04:17:54 by moel-hai          #+#    #+#             */
-/*   Updated: 2025/11/17 05:44:18 by moel-hai         ###   ########.fr       */
+/*   Updated: 2025/12/28 02:57:01 by moel-hai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie() : name("") {}
+Zombie::Zombie(){}
 
 Zombie::~Zombie()
 {
