@@ -6,7 +6,7 @@
 /*   By: moel-hai <moel-hai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 06:07:01 by moel-hai          #+#    #+#             */
-/*   Updated: 2025/11/17 06:07:08 by moel-hai         ###   ########.fr       */
+/*   Updated: 2025/12/28 01:35:29 by moel-hai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ int main (int argc, char** argv)
         std::cout << "Cannot create output file" << std::endl;
         return 1;
     }
-
+    
     return 0;
 }

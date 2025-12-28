@@ -6,7 +6,7 @@
 /*   By: moel-hai <moel-hai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 06:05:43 by moel-hai          #+#    #+#             */
-/*   Updated: 2025/11/17 06:06:40 by moel-hai         ###   ########.fr       */
+/*   Updated: 2025/12/28 01:23:29 by moel-hai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ std::string FileReplacer::read() const
         if (!in.eof())
             data += "\n";
     }
-
+    in.close();
     return data;
 }
 
@@ -54,5 +54,7 @@ bool FileReplacer::write(std::string text) const
         return false;
 
     out << text;
+
+    out.close();
     return true;
 }
